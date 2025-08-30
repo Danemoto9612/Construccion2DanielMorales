@@ -12,8 +12,7 @@ Este repositorio contiene el proyecto final para la materia Construcción de Sof
 ## ¿Cómo correr el proyecto?
 1. **Clona el repositorio**
 git clone https://github.com/Danemoto9612/Construccion2DanielMorales.git
-2. **Ve a tu IDLE de preferencia **
-Abre el archivo clonado con tu idle de preferencia
-3. 
+2. **Ve a tu IDLE de preferencia**
+3. **Abre el archivo clonado con tu idle de preferencia**
 4. 
 5. 
