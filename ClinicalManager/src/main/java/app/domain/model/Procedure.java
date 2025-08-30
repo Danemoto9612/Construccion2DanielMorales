@@ -1,3 +1,4 @@
+//Procedimientos
 package app.domain.model;
 
 import app.domain.model.enums.IdProcedure;
@@ -14,6 +15,7 @@ public class Procedure {
     private IdSpecialist idSpecialist;
     private int itemProcedure;
     private float cost;
+    private Order order;
 
     public String getProcedureName() {
         return procedureName;
@@ -85,6 +87,14 @@ public class Procedure {
 
     public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
     
 }

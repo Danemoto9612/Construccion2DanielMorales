@@ -1,3 +1,4 @@
+//Prueba diagnóstica
 package app.domain.model;
 
 import app.domain.model.enums.IdDiagnosticTest;
@@ -13,6 +14,7 @@ public class DiagnosticTest {
     private IdSpecialist idSpecialist;
     private int itemDiagnosticTest;
     private float cost;
+    private Order order;
 
     public String getDiagnosticTestName() {
         return diagnosticTestName;
@@ -76,6 +78,14 @@ public class DiagnosticTest {
 
     public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
     
 }

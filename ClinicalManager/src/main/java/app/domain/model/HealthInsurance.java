@@ -1,3 +1,4 @@
+//Póliza de seguros
 package app.domain.model;
 
 import java.time.LocalDate;

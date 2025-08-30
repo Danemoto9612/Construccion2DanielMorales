@@ -1,3 +1,4 @@
+//Medicamentos
 package app.domain.model;
 
 import app.domain.model.enums.IdDrug;
@@ -11,6 +12,7 @@ public class Drug {
     private float time;
     private int itemDrug;
     private float cost;
+    private Order order;
 
     public int getOrderNumber() {
         return orderNumber;
@@ -66,6 +68,14 @@ public class Drug {
 
     public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
     
 }

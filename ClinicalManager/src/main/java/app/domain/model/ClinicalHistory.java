@@ -1,18 +1,25 @@
+//Historia clínica
 package app.domain.model;
 
 import java.time.LocalDate;
 
 public class ClinicalHistory {
-    
+
     private LocalDate date;
-    private final String ccDoctor;
+    private User ccDoctor;
     private String reason;
     private String simptomatology;
     private Diagnosis diagnosis;
-    
-    public ClinicalHistory(String _ccDoctor) {
-        
-        this.ccDoctor = _ccDoctor;
+    private Drug drugs;
+    private Procedure procedure;
+    private DiagnosticTest diagnosticTest;
+
+    public User getCcDoctor() {
+        return ccDoctor;
+    }
+
+    public void setCcDoctor(User ccDoctor) {
+        this.ccDoctor = ccDoctor;
     }
 
     public LocalDate getDate() {
@@ -45,6 +52,30 @@ public class ClinicalHistory {
 
     public void setDiagnosis(Diagnosis diagnosis) {
         this.diagnosis = diagnosis;
+    }
+
+    public Drug getDrugs() {
+        return drugs;
+    }
+
+    public void setDrugs(Drug drugs) {
+        this.drugs = drugs;
+    }
+
+    public Procedure getProcedure() {
+        return procedure;
+    }
+
+    public void setProcedure(Procedure procedure) {
+        this.procedure = procedure;
+    }
+
+    public DiagnosticTest getDiagnosticTest() {
+        return diagnosticTest;
+    }
+
+    public void setDiagnosticTest(DiagnosticTest diagnosticTest) {
+        this.diagnosticTest = diagnosticTest;
     }
     
 }

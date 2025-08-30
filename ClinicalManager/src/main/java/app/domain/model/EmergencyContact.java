@@ -1,3 +1,4 @@
+//Contacto de emergencia
 package app.domain.model;
 
 public class EmergencyContact {

@@ -1,74 +1,36 @@
+//Diagnóstico
 package app.domain.model;
 
 public class Diagnosis {
 
-    private boolean drugs, procedures, diagnosticTest;
+    private boolean drugBool, procedureBool, diagnosticTestBool;
     private HealthInsurance healthInsurance;
-    private String drugName, procedureName, diagnosticName;
-    private float cost, quantify;
+    private Drug drug;
+    private Procedure procedure;
+    private DiagnosticTest diagnosticTest;
 
-    public boolean isDrugs() {
-        return drugs;
+    public boolean isDrugBool() {
+        return drugBool;
     }
 
-    public void setDrugs(boolean drugs) {
-        this.drugs = drugs;
+    public void setDrugBool(boolean drugBool) {
+        this.drugBool = drugBool;
     }
 
-    public boolean isProcedures() {
-        return procedures;
+    public boolean isProcedureBool() {
+        return procedureBool;
     }
 
-    public void setProcedures(boolean procedures) {
-        this.procedures = procedures;
+    public void setProcedureBool(boolean procedureBool) {
+        this.procedureBool = procedureBool;
     }
 
-    public boolean isDiagnosticTest() {
-        return diagnosticTest;
+    public boolean isDiagnosticTestBool() {
+        return diagnosticTestBool;
     }
 
-    public void setDiagnosticTes(boolean diagnosticTest) {
-        this.diagnosticTest = diagnosticTest;
-    }
-
-    public String getDrugName() {
-        return drugName;
-    }
-
-    public void setDrugName(String drugName) {
-        this.drugName = drugName;
-    }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
-
-    public float getQuantify() {
-        return quantify;
-    }
-
-    public void setQuantify(float quantify) {
-        this.quantify = quantify;
-    }
-
-    public String getProcedureName() {
-        return procedureName;
-    }
-
-    public void setProcedureName(String procedureName) {
-        this.procedureName = procedureName;
-    }
-
-    public String getDiagnosticName() {
-        return diagnosticName;
-    }
-
-    public void setDiagnosticName(String diagnosticName) {
-        this.diagnosticName = diagnosticName;
+    public void setDiagnosticTestBool(boolean diagnosticTestBool) {
+        this.diagnosticTestBool = diagnosticTestBool;
     }
 
     public HealthInsurance getHealthInsurance() {
@@ -77,6 +39,30 @@ public class Diagnosis {
 
     public void setHealthInsurance(HealthInsurance healthInsurance) {
         this.healthInsurance = healthInsurance;
+    }
+
+    public Drug getDrug() {
+        return drug;
+    }
+
+    public void setDrug(Drug drug) {
+        this.drug = drug;
+    }
+
+    public Procedure getProcedure() {
+        return procedure;
+    }
+
+    public void setProcedure(Procedure procedure) {
+        this.procedure = procedure;
+    }
+
+    public DiagnosticTest getDiagnosticTest() {
+        return diagnosticTest;
+    }
+
+    public void setDiagnosticTest(DiagnosticTest diagnosticTest) {
+        this.diagnosticTest = diagnosticTest;
     }
     
 }
