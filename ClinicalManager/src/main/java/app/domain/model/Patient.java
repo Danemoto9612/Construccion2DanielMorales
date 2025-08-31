@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class Patient {
     
-    private final String ccPatient;
+    private String ccPatient;
     private String fullName;
     private final LocalDate birthday;
     private final Genre genre;
@@ -52,6 +52,14 @@ public class Patient {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getCcPatient() {
+        return ccPatient;
+    }
+
+    public void setCcPatient(String ccPatient) {
+        this.ccPatient = ccPatient;
     }
     
 }
