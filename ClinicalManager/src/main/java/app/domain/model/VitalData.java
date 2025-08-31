@@ -3,19 +3,10 @@ package app.domain.model;
 
 public class VitalData {
     
-    private Patient patient;
     private String bloodPressure;
     private String temperature;
     private String pulse;
     private String bloodOxygenLevel;
-
-    public Patient getPatient() {
-        return patient;
-    }
-
-    public void setPatient(Patient patient) {
-        this.patient = patient;
-    }
 
     public String getBloodPressure() {
         return bloodPressure;

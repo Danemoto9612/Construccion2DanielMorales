@@ -5,22 +5,16 @@ import app.domain.model.enums.Genre;
 import java.time.LocalDate;
 
 public class Patient {
-    
+
     private String ccPatient;
     private String fullName;
-    private final LocalDate birthday;
-    private final Genre genre;
+    private LocalDate birthday;
+    private Genre genre;
     private String address;
     private String phone;
     private String email;
-    
-    public Patient(String _fullName, String _ccPatient, LocalDate _birthday, Genre _genre) {
-        
-        this.fullName = _fullName;
-        this.ccPatient = _ccPatient;
-        this.birthday = _birthday;
-        this.genre = _genre;
-    }
+    private VitalData vitalData;
+    private ClinicalHistory clinicalHistory;
 
     public String getFullName() {
         return fullName;
@@ -60,6 +54,38 @@ public class Patient {
 
     public void setCcPatient(String ccPatient) {
         this.ccPatient = ccPatient;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
+    public VitalData getVitalData() {
+        return vitalData;
+    }
+
+    public void setVitalData(VitalData vitalData) {
+        this.vitalData = vitalData;
+    }
+
+    public ClinicalHistory getClinicalHistory() {
+        return clinicalHistory;
+    }
+
+    public void setClinicalHistory(ClinicalHistory clinicalHistory) {
+        this.clinicalHistory = clinicalHistory;
     }
     
 }
